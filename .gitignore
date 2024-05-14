@@ -1,2 +1,5 @@
 Web/FileShareWebApp/obj/*
 Web/FileShareWebApp/bin/*
+Web/FileShareWebApp/.vs/*
+Web/FileShareWebApp/.vscode/*
+Web/FileShareWebApp/*.*proj.user

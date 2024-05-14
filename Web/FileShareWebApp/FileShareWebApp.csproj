@@ -6,12 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <Content Update="Protos\*">
+    <Content Update="Share\**\*.*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Protos\*" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="Share\**\*.*" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
