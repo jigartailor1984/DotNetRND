@@ -3,3 +3,4 @@ Web/FileShareWebApp/bin/*
 Web/FileShareWebApp/.vs/*
 Web/FileShareWebApp/.vscode/*
 Web/FileShareWebApp/*.*proj.user
+/.vs
