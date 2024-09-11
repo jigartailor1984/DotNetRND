@@ -16,3 +16,13 @@ Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Model/obj
 Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Web/bin
 Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Web/obj
 Blazor/BreezeAPI/BreezeAPI.WebApp/BreezeAPI.WebApp.csproj.user
+Blazor/IMS/.vs
+Blazor/IMS/IMS.CoreBusiness/bin
+Blazor/IMS/IMS.CoreBusiness/obj
+Blazor/IMS/IMS.Plugins/IMS.Plugins.InMemory/bin
+Blazor/IMS/IMS.Plugins/IMS.Plugins.InMemory/obj
+Blazor/IMS/IMS.UseCases/bin
+Blazor/IMS/IMS.UseCases/obj
+Blazor/IMS/IMS.WebApp/IMS.WebApp.csproj.user
+Blazor/IMS/IMS.WebApp/bin
+Blazor/IMS/IMS.WebApp/obj

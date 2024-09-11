@@ -1,0 +1,20 @@
+﻿@page "/"
+
+@inherits HomeBase
+
+<PageTitle>Test Page</PageTitle>
+
+<br/>
+<br/>
+
+<ul>
+    @if (Inventories is not null && Inventories.Count > 0)
+    {
+        foreach (var inventory in Inventories)
+        {
+            <li>
+                @inventory.InventoryName
+            </li>
+        }
+    }
+</ul>
