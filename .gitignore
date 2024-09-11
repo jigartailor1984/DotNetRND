@@ -4,3 +4,15 @@ Web/FileShareWebApp/.vs/*
 Web/FileShareWebApp/.vscode/*
 Web/FileShareWebApp/*.*proj.user
 /.vs
+Blazor/Blazor Tutorial/BlazorServerAppDemo/.vs
+Blazor/Blazor Tutorial/BlazorServerAppDemo/BlazorServerAppDemo/bin
+Blazor/Blazor Tutorial/BlazorServerAppDemo/BlazorServerAppDemo/obj
+Blazor/BreezeAPI/.vs
+Blazor/BreezeAPI/BreezeAPI.WebApp/bin
+Blazor/BreezeAPI/BreezeAPI.WebApp/obj
+Blazor/Tutorial/BlazoreTutorial/.vs
+Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Model/bin
+Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Model/obj
+Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Web/bin
+Blazor/Tutorial/BlazoreTutorial/EmployeeManagement.Web/obj
+Blazor/BreezeAPI/BreezeAPI.WebApp/BreezeAPI.WebApp.csproj.user

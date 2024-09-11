@@ -1,0 +1,19 @@
+﻿@page "/"
+
+@code{
+    private List<Contact> contacts;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        contacts = new List<Contact>()
+        {
+            new Contact
+            {
+                FirstName="Jigar",
+                LastName="Tailor",
+                Email="jigar@gmail.com"
+            }
+        };
+    }
+}
