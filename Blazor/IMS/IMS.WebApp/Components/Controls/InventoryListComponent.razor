@@ -1,0 +1,23 @@
+﻿
+@inherits InventoryListComponentBase
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Inventories is not null && Inventories.Count > 0)
+        {
+            foreach (var inventory in Inventories)
+            {
+               <InventoryListItemComponent Inventory="inventory"/>
+            }
+        }
+    </tbody>
+</table>
