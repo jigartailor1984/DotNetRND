@@ -15,7 +15,10 @@
         "launchBrowser": true,
         "applicationUrl": "http://localhost:5241",
         "environmentVariables": {
-          "ASPNETCORE_ENVIRONMENT": "Development"
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "BREEZE_APPKEY": "^42y6975650632#94258t282@r718`77",
+          "BREEZE_SECRETKEY": "i0td81HE339202156w96102D98497633",
+          "BREEZE_SESSION": "48111351"
         }
       },
       "https": {
@@ -24,14 +27,20 @@
         "launchBrowser": true,
         "applicationUrl": "https://localhost:7065;http://localhost:5241",
         "environmentVariables": {
-          "ASPNETCORE_ENVIRONMENT": "Development"
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "BREEZE_APPKEY": "^42y6975650632#94258t282@r718`77",
+          "BREEZE_SECRETKEY": "i0td81HE339202156w96102D98497633",
+          "BREEZE_SESSION": "48111351"
         }
       },
       "IIS Express": {
         "commandName": "IISExpress",
         "launchBrowser": true,
         "environmentVariables": {
-          "ASPNETCORE_ENVIRONMENT": "Development"
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "BREEZE_APPKEY": "^42y6975650632#94258t282@r718`77",
+          "BREEZE_SECRETKEY": "i0td81HE339202156w96102D98497633",
+          "BREEZE_SESSION": "48111351"
         }
       }
     }

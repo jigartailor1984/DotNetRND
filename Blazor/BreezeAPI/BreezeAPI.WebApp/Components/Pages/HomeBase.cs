@@ -1,4 +1,5 @@
-﻿using BreezeAPI.WebApp.Models;
+﻿using Breeze;
+using BreezeAPI.WebApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
@@ -6,48 +7,22 @@ using System.Text.Encodings.Web;
 
 namespace BreezeAPI.WebApp.Components.Pages
 {
-    [AllowAnonymous]
+    
     public class HomeBase : ComponentBase
     {
-        [SupplyParameterFromQuery]
-        public string? ApiSession{ get; set; }
-
-        [SupplyParameterFromForm]
-        public BreezeLoginModel? LoginModel { get; set; }
-
         [Inject]
-        public NavigationManager Navigation {  get; set; }
+        IConfiguration Configuration {  get; set; }
 
-        protected override Task OnInitializedAsync()
+        AppModel? Model {  get; set; }
+
+        protected override void OnInitialized()
         {
-            return base.OnInitializedAsync();
+            Model = new AppModel();
+            Model.Login.AppKey = Configuration["Breeze_AppKey"]!;
+            Model.Login.SecretKey = Configuration["Breeze_SecretKey"]!;
+            Model.Login.ApiSession = Configuration["Breeze_Session"]!;
+            base.OnInitialized();
         }
 
-        protected override void OnParametersSet()
-        {
-
-            LoginModel ??= new BreezeLoginModel();
-
-        }
-
-        public void Submit()
-        {
-            if (ApiSession == null)
-            { 
-                if (LoginModel is null)
-                {
-                    throw new ArgumentNullException(nameof(LoginModel));
-                }
-
-                string encodedKey = UrlEncoder.Default.Encode(LoginModel.AppKey);
-                string url = $"https://api.icicidirect.com/apiuser/login?api_key={encodedKey}";
-
-                Navigation.NavigateTo(url, true);
-            }
-            else
-            {
-                //Todo: BreezeAPI object creation.
-            }
-        }
     }
 }

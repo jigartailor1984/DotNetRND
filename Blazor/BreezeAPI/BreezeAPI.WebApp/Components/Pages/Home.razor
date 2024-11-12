@@ -1,8 +1,7 @@
 ﻿@page "/"
 
 @inherits HomeBase
-@using Microsoft.AspNetCore.Antiforgery
-@attribute [RequireAntiforgeryToken(required: false)]
+
 
 <PageTitle>Home</PageTitle>
 
@@ -10,30 +9,3 @@
 
 Welcome to your new app.
 
-@if(ApiSession is not null)
-{
-    <h3>API Session: @ApiSession</h3>
-}
-else
-{
-    <EditForm Model="LoginModel" FormName="loginForm" OnSubmit="Submit">
-        <div class="row mb-3">
-            <div class="col-2">
-                <label class="col-form-label">AppKey</label>
-            </div>
-            <div class="col-6">
-                <InputText class="form-control" @bind-Value="LoginModel.AppKey"/>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-2">
-                <label class="col-form-label">SecretKey</label>
-            </div>
-            <div class="col-6">
-                <InputText class="form-control" @bind-Value="LoginModel.SecretKey" />
-            </div>
-        </div>
-        <br/>
-        <button class="btn btn-primary" type="submit">Submit</button>
-    </EditForm>
-}

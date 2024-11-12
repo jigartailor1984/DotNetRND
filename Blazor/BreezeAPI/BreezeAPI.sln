@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreezeAPI.WebApp", "BreezeAPI.WebApp\BreezeAPI.WebApp.csproj", "{CDA01FAA-4E4F-4797-ADB0-6E259FC14629}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreezeAPI.WebApp", "BreezeAPI.WebApp\BreezeAPI.WebApp.csproj", "{CDA01FAA-4E4F-4797-ADB0-6E259FC14629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
